@@ -13,8 +13,8 @@ ENV HASURA_GRAPHQL_PG_CONNECTIONS=15
 # Change $DATABASE_URL to your heroku postgres URL if you're not using
 # the primary postgres instance in your app
 CMD graphql-engine \
-    --database-url $DATABASE_URL \
-    --port $PORT \
+    --database-url=$DATABASE_URL \
+    --port=$PORT \
     serve
 
 ## Comment the command above and use the command below to
